@@ -1,0 +1,649 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name:     Loblolly Custom
+Description:    This theme uses the Canvas framework, and was created just for Loblolly.
+Template:       canvas
+Version:        0.1.0
+*/
+
+@import url("../canvas/style.css");
+
+body #loopedSlider a:active, body #loopedSlider a:focus, body #loopedSlider a {
+	outline: 0 !important;
+}
+
+.clearer {
+	clear: both;
+}
+
+body #wrapper {
+	width: auto !important; 
+	padding: 0px;
+	min-width: 1005px;
+}
+
+body #page_wrapper {
+	background: #e4e1dc url(images/diagonal.png);
+	padding: 0 40px 60px 40px;
+	min-width: 1005px;
+}
+
+body #page {
+	width: 965px; 
+	margin: auto; 
+	background: #ffffff; 
+	padding: 0 18px 23px 18px;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+body.width-960 .col-full, body.one-col-960 #main-sidebar-container {
+	width: 965px;
+}
+
+
+body.two-col-right-960 #main-sidebar-container #sidebar {
+	width: 182px;
+	border-right: 1px solid #e9e8e7;
+	position: relative;
+	left: 1px;
+	padding-right: 23px;
+}
+
+body.two-col-right-960 #main-sidebar-container #main {
+	width: 713px;
+	border-left: 1px solid #e9e8e7;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+
+body.two-col-left-960 #main-sidebar-container #sidebar {
+	width: 268px;
+	border-left: 1px solid #e9e8e7;
+	position: relative;
+	right: 1px;
+	padding-left: 40px;
+}
+
+body.two-col-left-960 #main-sidebar-container #main {
+	width: 625px;
+	border-right: 1px solid #e9e8e7;
+	padding-right: 30px;
+}
+
+
+/*Header*/
+body #header {
+	background-position: right center;
+}
+
+#navigation .search_main {
+	background-color: #fdfafa;
+}
+
+#navigation {
+	margin-bottom: 0px;
+}
+
+body #header-search {
+	width: 206px;
+}
+
+#header-search .searchform input.s {
+	padding: 6px 8px;
+	width: 80%;
+	margin: 0;
+	border: none;
+	background: none;
+	color: #777;
+	font-size: 10px;
+}
+
+body #header-search .searchform {
+	border-color: #edebe7
+}
+
+/*  Navigation **/
+body .nav {
+		margin-left: 0px;
+}
+
+body .nav li a{
+	text-transform: none;
+}
+
+
+
+body .nav li a:hover,body .nav li.current_page_item a,body .nav li.current_page_parent a,body .nav li.current-menu-ancestor a, body .nav li.current-menu-item a,body .nav li.current_page_item li a,body .nav li.current_page_parent li a,body .nav li.current-menu-ancestor li a,body .nav li.current-menu-item li a,body .nav li.sfHover a {
+	background: #fff;
+
+}
+
+body .nav > li > a {
+	border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	background: transparent;
+	margin-left: 1px; /*Keeps the background image on list item from being hidden*/
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+body .nav > li {
+	 background: url(images/menu-divider.png) no-repeat left center;
+}
+
+body .nav > li:first-child{
+	background: none;
+}
+
+body .nav > li a.sf-with-ul {
+	padding-right: 18px;
+}
+
+body .nav > li.current_page_parent > a, body .nav > li.current_page_item > a,body .nav > li.current-menu-ancestor > a {
+	background: transparent url(images/menu-current.png) no-repeat 18px center;
+	padding-left: 30px;
+}
+
+.nav > li > a span.sf-sub-indicator {
+	display: none;
+}
+
+body .nav li ul li a:hover,body .nav li.sfHover ul li a.sf-with-ul {
+	background: #fff;
+}
+
+/* Make all hover states green, and all current page items green and ancestors*/
+body .nav li a:hover, body .nav  li.current_page_item > a, .nav  li.current-menu-ancestor > a {
+	color: #8ca043;
+}
+
+
+body .nav li ul li a {
+	width: 185px;
+	font-size: 12px;
+}
+
+body .nav li ul {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 205px;
+}
+
+body .nav li  ul li:first-child {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+body .nav li  ul li:last-child {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+body .nav li ul ul {
+	margin: -30px 0 0 205px;
+}
+
+ul#main-nav > li > a{
+	text-transform: uppercase;
+}
+
+/*Slider changes  */
+#loopedSlider {
+	margin-bottom: 17px;
+}
+
+#loopedSlider .slides .slide, body #loopedSlider .slides .slide .woo-image
+{
+	width: 965px !important;
+}
+
+body #loopedSlider .slides .slide .woo-image {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+#loopedSlider .content {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	/*new
+	display: none;*/
+}
+
+body .business #loopedSlider .content h2 {
+	position: absolute;
+	bottom: 90px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	font-size: 39px;
+	width: 340px;
+	background: none;
+	/*new*/
+	display: none
+}
+
+/*
+body .business #loopedSlider .content h2 span {
+	color: #8c9f42;
+}
+*/
+
+body .business #loopedSlider a.previous {
+	top: 267px;
+	top: 255px;
+	left: 24px;
+	z-index: 100;
+
+}
+
+
+body .business #loopedSlider a.next {
+	top: 267px;
+	top: 255px;
+	left: 65px;
+	z-index: 100;
+	width: 25px;
+	
+}
+
+body #loopedSlider, body #loopedSlider .container, #loopedSlider .container .slides {
+	height: 415px !important;
+	overflow-y: visible;
+}
+
+body #wrapper .business #loopedSlider .excerpt {
+	position: absolute;
+	top: 324px;
+	opacity: 1;
+	width: 935px;
+	height: 65px;
+	overflow: hidden;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background: #8d8774;
+	padding: 20px 15px 0px 15px;
+}
+
+body #wrapper .business #loopedSlider .excerpt p {
+	width: 925px;
+	max-width: 925px;
+	background: none;
+	color: #f7f4f2;
+    font-size: 13px;
+	line-height: 20px;
+}
+
+
+/* Links  */
+
+a:link.learn_more, a:link.button, a:visited.learn_more, a:visited.button, input.learn_more, input.button {
+	background: #8c9f42 url(images/diagonal.png) !important;
+	display: inline-block;
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 12px !important;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+	line-height: 12px !important;
+}
+
+
+/************ Widgets *************/
+body .widget h3 {
+	font-family: Arial, sans-serif;
+	padding-bottom: 12px;
+}
+
+body .widget li {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+body .widget ul {
+	padding-left: 0px;
+}
+
+body .widget ul li a {
+	padding-left: 0px;
+}
+
+/* Main sidebar  */
+body #sidebar .widget {
+	padding-left: 14px;
+}
+
+body #sidebar .widget .menu {
+	margin-left: -14px;
+}
+
+body #sidebar .widget .menu > li {
+	border-top: 1px solid #e9e8e7;
+	padding: 15px 0px;
+	color: #444033;
+}
+
+body #sidebar .widget .menu li li a{
+	line-height: 1.3em;
+}
+
+body #sidebar .widget .menu li li {
+	margin: .6em 0;
+}
+
+body #sidebar .widget .menu a {
+	color: #838076;
+	padding-left: 14px;
+	display: block;
+}
+
+body #sidebar .widget .menu a:hover, body #sidebar .widget .menu li.current-menu-item > a {
+	color: #82953e;
+	line-height: 1.3em;
+	text-decoration: none;
+	background: url(images/menu-current.png) no-repeat left center;
+}
+
+
+body #sidebar .widget .menu > li > a {
+	color: #645f4c;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+
+body.two-col-left-960 #sidebar .widget {
+	padding-left: 0px;
+}
+
+
+#home-callouts {
+	background-color: #e6e3de;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+	padding: 25px 0px;
+	
+}
+
+#home-callouts .widget {
+	float: left;
+	padding: 0 2.5% 50px;
+	width: 27.5%;
+	margin: 0px;
+	color: #747165;
+	font-size: 12px;
+	line-height: 20px;
+	border-left: 1px solid #d2cfca;
+	position: relative;
+	overflow: hidden !important;
+
+}
+
+#home-callouts .widget:first-child {
+	border-left: none;
+}
+
+#home-callouts .widget h3 {
+	font-family: Arial, sans-serif;
+	color: #463726;
+	font-size: 22px;
+	text-transform: none;
+	font-weight: normal;
+	padding-bottom: 0px;
+	border-bottom: none;
+	margin: 0 0 8px 0;
+}
+
+#home-callouts a.learn_more {
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+/* Footer Widgets  */
+body #footer_wrapper {
+	padding: 0 40px;
+}
+
+body #footer-widgets {
+	border: 0px;
+	width: 985px;
+}
+
+body #footer-widgets .block {
+	border-left: 1px solid #a19b8a;
+}
+
+body #footer-widgets.col-4 .block {
+	padding: 20px 19px 0 19px;
+	width: 20.5%;
+	float: left;
+}
+
+body #footer-widgets.col-4 .block.footer-widget-1 {
+	border: none;
+	padding-left: 0px;
+	width: 165px;
+}
+
+body #footer-widgets.col-4 .block.footer-widget-2 {
+	width: 165px;
+}
+
+body #footer-widgets.col-4 .block.footer-widget-3 {
+	width: 275px;
+}
+
+body #footer-widgets.col-4 .block.footer-widget-4 {
+	width: 260px;
+	padding-right: 0px;
+}
+
+body #footer-widgets .widget h3 {
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+
+body #footer-widgets .widget, body #footer-widgets .widget h3, body #footer-widgets .widget a {
+	color: #fdfafa;
+}
+
+body #footer-widgets .widget p, body #footer-widgets .widget .textwidget, body #footer-widgets .widget li, body #footer-widgets .widget li a {
+	font: bold 12px/21px Arial, sans-serif;
+	color: #E6E3DE;
+}
+
+body #footer-widgets .widget ul ul li {
+	background: url(images/bullet.png) no-repeat left 5px;
+	padding-left: 10px;
+	margin: 7px 0px;
+}
+body #footer-widgets .widget ul ul li a {
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+	line-height: 1.4em;
+}
+
+/*Footwer widget form*/
+#footer-widgets .wpcf7-text, #footer-widgets textarea {
+	background: url(images/input_bg.png);
+	border: none;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	color: #fff;
+	width: 240px;
+	padding: 8px 10px;
+	margin: 0px;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+}
+
+#footer-widgets textarea {
+	height: 50px;
+	overflow: auto;
+}
+
+#footer-widgets .wpcf7 p {
+	margin: 8px 0px;
+}
+
+#footer-widgets .wpcf7-submit {
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	background: #b3b0a6;
+	color: #fdfafa;
+	text-transform: uppercase;
+	border: 0px;
+	padding: 5px 15px;
+	float: right;
+}
+
+body .wpcf7-response-output, body div.wpcf7-mail-sent-ok, body .wpcf7-validation-errors, body span.wpcf7-not-valid-tip {
+	border: none;
+	color: #8D8774;
+	background :#fff;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+body span.wpcf7-not-valid-tip {
+	width: 200px;
+}
+
+
+/***********   Home Page Specific  ***********/
+.home #content {
+	padding-bottom: 0px;
+}
+
+/*****Page Headers (using breadcrumbs)*******/
+body .breadcrumbs {
+	margin: 0px;
+}
+.breadcrumb-trail a, .breadcrumb-trail span {
+	display: none;
+}
+
+.breadcrumb-trail a:first-child {
+	display: inline;
+}
+
+#heading-title {
+	background: #8d8774 url(images/diagonal.png);
+	padding: 15px 12px;
+	margin-bottom: 24px;
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	color: #fdfafa;
+	font-size: 28px;
+	text-transform: lowercase;
+}
+
+#heading-title a {
+	color: #fdfafa;
+}
+
+#heading-title a:hover {
+	text-decoration: none;
+}
+
+span.wpcf7-list-item { display: block; }
+
+/*Content changes*/
+body h4 { margin-bottom: 1em;}
+body h5{margin-bottom: .5em}
+
+body input, body textarea {margin-bottom: 4px;}
+
+body .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+	
+}
+
+body .entry h1 {
+	line-height: 1.5em;
+}
+
+body .entry h2 {
+	line-height: 1.4em;
+}
+
+body .entry h3 {
+	line-height: 1.3em;
+}
+body .entry h4 {
+	line-height: 1.3em;
+	color: #645f4c;
+}
+
+body .entry h5 {
+	line-height: 1.5em;
+}
+
+body  .entry h6 {
+	line-height: 1.3em;
+}
+
+body .woo-sc-hr, body .woo-sc-divider {padding-top: 5px;}
+
+/*Contact Forms  */
+#gform_wrapper_1 .gfield_label {
+	color: #73872e;
+	text-transform: lowercase;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.gform_wrapper input[type="text"] {
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+body .gform_wrapper .gfield_checkbox, body .gform_wrapper .gfield_radio {
+	margin-left: 0px !important;
+}
+
+/**Search results page**/
+body.search-results .post-more, body.search-results .post-meta {
+	display: none;
+}
+
+body.search-results.search #main-sidebar-container #main {
+	width: 90%;
+	border-left: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: none;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+}
+
+

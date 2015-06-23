@@ -1,0 +1,36 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^Home_Page\.html$ "http\:\/\/www\.loblollyconsulting\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^Management_Services\.html$ "http\:\/\/www\.loblollyconsulting\.com\/services\/business\-management\-services\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^Technology_Services\.html$ "http\:\/\/www\.loblollyconsulting\.com\/services\/information\-management\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^State_of_Texas_CISV_Catalog\.html$ "http\:\/\/www\.loblollyconsulting\.com\/contracts\/staff\-augmentation\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^DIR_Contracts\.html$ "http\:\/\/www\.loblollyconsulting\.com\/contracts\/dbits\-services\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^loblollyconsulting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.loblollyconsulting\.com$
+RewriteRule ^About_Us\.html$ "http\:\/\/www\.loblollyconsulting\.com\/company\-information\/overview\/" [R=301,L]
+
